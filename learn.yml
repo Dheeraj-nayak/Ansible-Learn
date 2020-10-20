@@ -1,10 +1,10 @@
  - name: ReadJsonfile
-    hosts: localhost
-    tasks:
-      - name: Display the JSON file content
-        shell: cat Ansible-Learn/config.json
-        register: result
+   hosts: localhost
+   tasks:
+    - name: Display the JSON file content
+      shell: cat Ansible-Learn/config.json
+      register: result
 
-      - name: save the Json data to a Variable as a Fact
-        set_fact:
-          jsondata: "{{ result.stdout | from_json }}"
+    - name: save the Json data to a Variable as a Fact
+      set_fact:
+       jsondata: "{{ result.stdout | from_json }}"

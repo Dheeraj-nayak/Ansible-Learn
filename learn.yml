@@ -1,4 +1,4 @@
-- name: ReadJsonfile
+ - name: ReadJsonfile
     hosts: localhost
     tasks:
       - name: Display the JSON file content

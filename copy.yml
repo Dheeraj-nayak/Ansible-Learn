@@ -1,0 +1,7 @@
+- name: copy module 
+  hosts: localhost
+  tasks: 
+    - name: Copy from git to localhost
+      copy:
+        src: test_file
+        dest: 
